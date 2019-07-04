@@ -1,0 +1,17 @@
+% !TEX root = thesis.tex
+
+\section{Introduction}\label{sec:introduction}
+Analysing logs to identify patterns and problems has been attempted ever
+since logs have been generated. At its most general, to log is "to put information into a written record" and is a process as old as writing systems themselves. Previously, manual investigation was used whereby administrators would read the logs stored on each computer, perhaps aided by grepping for keywords. As the scale of services has increased in the age of Big Data, this approach is no longer feasible. Attempts have been made in the last 20 years to automate this process. One elementary method that is investigated regularly and is a classic example of expert systems that emulate the human expert decision making process is the use of regular expressions (regex), nested if-then rules used to select key features. However,
+this requires prior knowledge of the dataset, is proportional in difficulty to
+the number of distinct message types present  and require continuous updating if the nature of log files
+changes.  Alternatievly, supervised and unsupervised machine learning algorithms have been investigated. In supervised
+learning training datasets where anomalous and normal data are labelled by
+hand are used to train an algorithm. Decision trees[5][3] have been used
+in this regime for classification of logs files when the error categories are
+already known. Since logs are generally labelled with a time stamp, a different school if techniques have utilised techniques adapted to time series data. . A Finite State Automata
+was trained assuming that each log key can be mapped to a state transition.
+In this way, the chronology of interrelated messages is captured, and anomalies in transition timings and loop executions are used to identify system errors. This method is relatively successful but requires that edit distances between all logs is calculated which is infeasible for large datasets.
+
+We majorly deal with the log data which contains the "ERROR" messages and these messages are analyzed and then clustered into classes and example of the log error messages produced could be seen below. 
+<\textbf{ADD RAW LOG DATA FIGURE}>
