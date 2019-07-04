@@ -1,112 +1,88 @@
 % !TEX root = thesis.tex
 
 \section{Comparative Study}\label{sec:contents}
-The contents must consist of a clearly written overview of the research question, the relationship to existing work in the field concerned, and the sources used (this is the introduction and the theory framework), a reproducible description of the model used, a clear description of the experiments carried out, an interpretation of the results in relation to the research question (this is the conclusion) and a discussion of the value, impact and possible continuations of the work.
-Bear in mind that the introduction and conclusion together must form a comprehensible summary of the report.
-This means that you may refer to your model in the introduction, and that you will need to summarize your results again in the conclusion.
+We implemented multiple approaches to implement the clustering of the log data and are tested for better performances in terms of accuracy and efficiency. The methods implemented include K means clustering, Minhash LSH (tested with shingles of variable sizes), and a Graph based approach that treats all the messages as nodes and the weight of the edges as the distance between the messages. 
 
 \subsection{K means clustering}\label{sec:_before_you_start}
-In order to clarify for yourself precisely what you are going to write, it is useful to note down answers to the following questions.
-These questions should be asked for every piece of academic writing, and the answers will provide a useful guide as you write.
 
-The first question is: what is the \textit{aim} of your writing?
-In the case of the Bachelor's project, the aim is to write a report on a project and present your results.
-But the aim could also be to write a project proposal, a presentation of a new idea, a contribution to a discussion, an overview article, etc.
-For each type of article, there are requirements as to what should and should not be included.
-
-The second question is: \textit{for whom} are you writing? In the case of the Bachelor's thesis, you are writing for your supervisor.
-You may also be writing for other researchers, who may or may not be favourably disposed towards your ideas.
-Sometimes you may also be required to write for a wider audience.
-Each group for whom you write requires a different style, and different assumptions in terms of background knowledge and approach.
-
-The third question that you have to answer is: \textit{for what} are you writing?
-In the case of a Bachelor's thesis, you are writing a text that is approximately 12-15 pages long.
-A Master's thesis may easily be five times as long.
-An article for a conference may be six pages long, and a journal article may be as long as 30 pages.
-Your audience's background and the level of substantiation you need to provide will also depend on the forum for which you are writing.
-A journal article, for example, requires more detailed substantiation than a conference article or a Bachelor's thesis.
-
-When you have answered these basic questions, you can address more specific questions.
-The most important question is: what is your contribution, or what message do you want to convey?
-Also, what can you assume to be known? What can you present as background information? How much detail can you go into? And last but not least, whose work have you used for your own work? In other words, what references are needed?
 
 \subsection{Minhash}\label{sec:_the_abstract}
-If your research is going to be sold, the abstract serves as the \textit{teaser}.
-This means that people must be able to decide on the basis of the abstract whether the rest of your article is worth reading.
-In many cases, abstracts are placed in a range of databases and, on the basis of the abstract, readers must decide whether to download or purchase the article – which can be expensive in the latter case.
+% If your research is going to be sold, the abstract serves as the \textit{teaser}.
+% This means that people must be able to decide on the basis of the abstract whether the rest of your article is worth reading.
+% In many cases, abstracts are placed in a range of databases and, on the basis of the abstract, readers must decide whether to download or purchase the article – which can be expensive in the latter case.
 
-Because abstracts relate to academic/ scientific research, it is important that they include the key findings and conclusions.
-An abstract must not be a cliff-hanger that leaves the reader in suspense as to the outcome of the research.
-It must give a complete idea of what happened and what can be deduced from this.
+% Because abstracts relate to academic/ scientific research, it is important that they include the key findings and conclusions.
+% An abstract must not be a cliff-hanger that leaves the reader in suspense as to the outcome of the research.
+% It must give a complete idea of what happened and what can be deduced from this.
 
-The abstract must be seen as separate from the rest of the text.
-It should therefore be possible to read the main text without needing to read the abstract first.
+% The abstract must be seen as separate from the rest of the text.
+% It should therefore be possible to read the main text without needing to read the abstract first.
 
 \subsection{Wieghted Minhash}\label{sec:_the_abstract}
-If your research is going to be sold, the abstract serves as the \textit{teaser}.
-This means that people must be able to decide on the basis of the abstract whether the rest of your article is worth reading.
-In many cases, abstracts are placed in a range of databases and, on the basis of the abstract, readers must decide whether to download or purchase the article – which can be expensive in the latter case.
+% If your research is going to be sold, the abstract serves as the \textit{teaser}.
+% This means that people must be able to decide on the basis of the abstract whether the rest of your article is worth reading.
+% In many cases, abstracts are placed in a range of databases and, on the basis of the abstract, readers must decide whether to download or purchase the article – which can be expensive in the latter case.
 
-Because abstracts relate to academic/ scientific research, it is important that they include the key findings and conclusions.
-An abstract must not be a cliff-hanger that leaves the reader in suspense as to the outcome of the research.
-It must give a complete idea of what happened and what can be deduced from this.
+% Because abstracts relate to academic/ scientific research, it is important that they include the key findings and conclusions.
+% An abstract must not be a cliff-hanger that leaves the reader in suspense as to the outcome of the research.
+% It must give a complete idea of what happened and what can be deduced from this.
 
-The abstract must be seen as separate from the rest of the text.
-It should therefore be possible to read the main text without needing to read the abstract first.
+% The abstract must be seen as separate from the rest of the text.
+% It should therefore be possible to read the main text without needing to read the abstract first.
 
 \subsection{Performance with the use of shingles}\label{sec:_subdivide_text}
-A good structure with sections or chapters is important for the legibility of your thesis.
-It is important to think in advance about how you want to structure the material you are going to present.
-There is often a fixed structure (e.g., introduction, system description, results, conclusion, for a AI report; introduction, method, results, discussion, for empirical work) for short texts such as articles and the Bachelor's thesis.
-In the case of longer texts, these parts may be divided into more chapters, but it is also useful to consider whether subsections are required in short texts.
-When writing a PhD thesis, for example, it is even customary to pause half way through the process in order to draw up a detailed table of contents, setting out the chapters, the sections in the chapters and a brief description of the contents.
-This may even be useful for a Bachelor's thesis, and certainly for a Master's thesis.
+% A good structure with sections or chapters is important for the legibility of your thesis.
+% It is important to think in advance about how you want to structure the material you are going to present.
+% There is often a fixed structure (e.g., introduction, system description, results, conclusion, for a AI report; introduction, method, results, discussion, for empirical work) for short texts such as articles and the Bachelor's thesis.
+% In the case of longer texts, these parts may be divided into more chapters, but it is also useful to consider whether subsections are required in short texts.
+% When writing a PhD thesis, for example, it is even customary to pause half way through the process in order to draw up a detailed table of contents, setting out the chapters, the sections in the chapters and a brief description of the contents.
+% This may even be useful for a Bachelor's thesis, and certainly for a Master's thesis.
 
-Obviously, the content of each subdivision must form a cohesive whole.
-Devote each subdivision to a specific subject, and decide in advance what should and should not be included.
-Sooner or later you may encounter the problem that you need to have explained point B before explaining point A, and vice versa.
-You can solve this by referring ahead, and possibly giving a brief idea of what point B involves.
-A little redundancy in your thesis is therefore acceptable.
-Avoid endlessly long sections in which you try to explain everything at once.
+% Obviously, the content of each subdivision must form a cohesive whole.
+% Devote each subdivision to a specific subject, and decide in advance what should and should not be included.
+% Sooner or later you may encounter the problem that you need to have explained point B before explaining point A, and vice versa.
+% You can solve this by referring ahead, and possibly giving a brief idea of what point B involves.
+% A little redundancy in your thesis is therefore acceptable.
+% Avoid endlessly long sections in which you try to explain everything at once.
 
-Ideally, subsections, sections and chapters will all be roughly the same length.
-Although differences in length are obviously inevitable, there is nevertheless a problem with the structure if you have sections with only one paragraph as well as sections that are three pages long.
-The use of many levels of  subheadings (e.g.\ 1.2.1.7b) also points to a problem with the structure.
-A rule of thumb for longer texts is that it must be possible to read a chapter in one sitting (1½ hours or so).
-A good length is therefore between 10 and 20 pages.
+% Ideally, subsections, sections and chapters will all be roughly the same length.
+% Although differences in length are obviously inevitable, there is nevertheless a problem with the structure if you have sections with only one paragraph as well as sections that are three pages long.
+% The use of many levels of  subheadings (e.g.\ 1.2.1.7b) also points to a problem with the structure.
+% A rule of thumb for longer texts is that it must be possible to read a chapter in one sitting (1½ hours or so).
+% A good length is therefore between 10 and 20 pages.
 
 
 \subsection{Graph Based clustering methods}\label{sec:_system_methods}
-The description of the system and/or method must focus on reproducibility.
-In the case of a computer program, sufficient detail must be provided to enable the programming to be repeated.
-In the case of an experimental setup, this means that sufficient details should be given so that the precise experiment can be repeated.
+% The description of the system and/or method must focus on reproducibility.
+% In the case of a computer program, sufficient detail must be provided to enable the programming to be repeated.
+% In the case of an experimental setup, this means that sufficient details should be given so that the precise experiment can be repeated.
 
-For experimental papers, there is a much used, and therefore more or less standard structure.
-It is  highly recommended to adhere to such a standard structure.
-It helps the reader because they know where to look for particular information, and it helps you as a writer because it is easier not to forget things.
+% For experimental papers, there is a much used, and therefore more or less standard structure.
+% It is  highly recommended to adhere to such a standard structure.
+% It helps the reader because they know where to look for particular information, and it helps you as a writer because it is easier not to forget things.
 
-In both cases, only relevant details should be given.
-Just as, in the case of an fMRI experiment, the colour of the pyjamas worn by the test subjects is unimportant but the type and settings of the MRI machine \textit{are} important, in the case of programs it is important to describe precisely \textit{what} happens, but not precisely \textit{how} this was programmed.
-The description therefore needs to be above the source-code level.
-Often, the best way is to describe in general how the system works and then discuss its individual components.
-Ultimately, everything must be substantiated with formulae and tables of pseudo code.
+% In both cases, only relevant details should be given.
+% Just as, in the case of an fMRI experiment, the colour of the pyjamas worn by the test subjects is unimportant but the type and settings of the MRI machine \textit{are} important, in the case of programs it is important to describe precisely \textit{what} happens, but not precisely \textit{how} this was programmed.
+% The description therefore needs to be above the source-code level.
+% Often, the best way is to describe in general how the system works and then discuss its individual components.
+% Ultimately, everything must be substantiated with formulae and tables of pseudo code.
 
-The reasons behind certain choices in the system should also be given.
-In many cases, certain aspects of the system can be executed in many different ways.
-It is therefore necessary to explain why a certain method of execution was chosen and why the alternatives were rejected.
-It is helpful to place these choices in the wider context of the research, as outlined in the introduction and research question.
-Describing the system therefore involves more than simply describing what you built!
+% The reasons behind certain choices in the system should also be given.
+% In many cases, certain aspects of the system can be executed in many different ways.
+% It is therefore necessary to explain why a certain method of execution was chosen and why the alternatives were rejected.
+% It is helpful to place these choices in the wider context of the research, as outlined in the introduction and research question.
+% Describing the system therefore involves more than simply describing what you built!
 
-Importantly, remember to include the values of all the parameters used in your system! The best way to do this is to present them in a table in a central position.
+% Importantly, remember to include the values of all the parameters used in your system! The best way to do this is to present them in a table in a central position.
 
-The description in the system/method section goes beyond the description of the computer model or experiment that was used.
-The techniques used to analyse the behaviour of the system (or the model, or the experimental subjects) should also be described.
-In many cases, a computer model or an experiment generates sizeable volumes of data that, in their raw form, are too large and complex to draw a conclusion from.
-In such cases, measures need to be defined for calculations using the data.
-These may be averages, or aspects such as the diversity of the system, learning success, rate of convergence, etc.
-The calculations must be clearly described, and reasons given for the choice of measures.
-For experiments, this means that the method section also describes how the raw data were collected, averaged, and processed to make it ready for statistical testing.
-The statistical tests must also be described, together with the reasons to use those.
+% The description in the system/method section goes beyond the description of the computer model or experiment that was used.
+% The techniques used to analyse the behaviour of the system (or the model, or the experimental subjects) should also be described.
+% In many cases, a computer model or an experiment generates sizeable volumes of data that, in their raw form, are too large and complex to draw a conclusion from.
+% In such cases, measures need to be defined for calculations using the data.
+% These may be averages, or aspects such as the diversity of the system, learning success, rate of convergence, etc.
+% The calculations must be clearly described, and reasons given for the choice of measures.
+% For experiments, this means that the method section also describes how the raw data were collected, averaged, and processed to make it ready for statistical testing.
+% The statistical tests must also be described, together with the reasons to use those.
 
 %  idea to present them in a pie chart, and sometimes it is useful to think up a graph of your own.
 % A number of conventions for producing decent graphs are discussed in Section 4.7.
